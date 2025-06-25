@@ -1,0 +1,17 @@
+{
+    "DOGEUSDT": {
+        "long_position_open": false,
+        "short_position_open": false,
+        "position_data": {}
+    },
+    "SOLUSDT": {
+        "long_position_open": true,
+        "short_position_open": false,
+        "position_data": {
+            "LONG": {
+                "entry_time": "2025-06-24T21:15:05.930327+00:00",
+                "entry_price": 141.73
+            }
+        }
+    }
+}

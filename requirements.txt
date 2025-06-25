@@ -1,0 +1,4 @@
+pandas
+ta
+python-dotenv
+binance-connector 

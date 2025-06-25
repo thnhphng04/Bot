@@ -1,0 +1,448 @@
+{
+    "api_key": "NBdODAJBYqe5u41P5fl0gGN9sciiwtGgKYo3RtOYALYVyRGzT0rkqIoyxqeiwuyx",
+    "api_secret": "qHhneCygjsW6AEu3QBeQk9yzKGlfMG6YamSTX45Xa05nzbjl0i3VlToqkno1E1sX",
+    "telegram": {
+        "enabled": true,
+        "bot_token": "8109048447:AAEBwcLzZtwBj4gOeeQVgbuM-wHNo_ablPA",
+        "chat_id": "5965359710"
+    },
+    "risk_settings": {
+        "mode": "percentage",
+        "value": 0.5
+    },
+    "trading_pairs": [
+        {
+            "symbol": "AVAXUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 60,
+                    "fast_RSI_threshold": 70,
+                    "slow_RSI_threshold": 60,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 2,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 15,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 36,
+                    "slow_RSI_threshold": 41,
+                    "atr_multiplier": 3,
+                    "tp_sl_ratio": 1.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "BTCUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 25,
+                    "slow_RSI_window": 60,
+                    "fast_RSI_threshold": 66,
+                    "slow_RSI_threshold": 60,
+                    "atr_multiplier": 4,
+                    "tp_sl_ratio": 3,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": false,
+                "params": {}
+            }
+        },
+        {
+            "symbol": "DOGEUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 66,
+                    "slow_RSI_threshold": 58,
+                    "atr_multiplier": 3,
+                    "tp_sl_ratio": 2.5,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 36,
+                    "slow_RSI_threshold": 44,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 1.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "ETHUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 64,
+                    "slow_RSI_threshold": 61,
+                    "atr_multiplier": 4,
+                    "tp_sl_ratio": 2,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 32,
+                    "slow_RSI_threshold": 38,
+                    "atr_multiplier": 7,
+                    "tp_sl_ratio": 3,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "LINKUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 15,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 70,
+                    "slow_RSI_threshold": 63,
+                    "atr_multiplier": 2.5,
+                    "tp_sl_ratio": 4.5,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 60,
+                    "fast_RSI_threshold": 26,
+                    "slow_RSI_threshold": 42,
+                    "atr_multiplier": 4.5,
+                    "tp_sl_ratio": 2.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "SOLUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 15,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 74,
+                    "slow_RSI_threshold": 59,
+                    "atr_multiplier": 3,
+                    "tp_sl_ratio": 5,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 30,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 38,
+                    "slow_RSI_threshold": 40,
+                    "atr_multiplier": 5,
+                    "tp_sl_ratio": 1,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "XRPUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 70,
+                    "slow_RSI_threshold": 61,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 5,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 38,
+                    "slow_RSI_threshold": 44,
+                    "atr_multiplier": 2.5,
+                    "tp_sl_ratio": 2.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "1000SHIBUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 70,
+                    "slow_RSI_threshold": 61,
+                    "atr_multiplier": 2,
+                    "tp_sl_ratio": 4,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 30,
+                    "slow_RSI_threshold": 42,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 2.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "ADAUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 66,
+                    "slow_RSI_threshold": 61,
+                    "atr_multiplier": 2,
+                    "tp_sl_ratio": 6,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 28,
+                    "slow_RSI_threshold": 41,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 1,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "LTCUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": false,
+                "params": {}
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 30,
+                    "slow_RSI_threshold": 40,
+                    "atr_multiplier": 2.5,
+                    "tp_sl_ratio": 1.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "OPUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 15,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 76,
+                    "slow_RSI_threshold": 61,
+                    "atr_multiplier": 2.5,
+                    "tp_sl_ratio": 4,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 26,
+                    "slow_RSI_threshold": 40,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 1.5,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "SUIUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 60,
+                    "fast_RSI_threshold": 74,
+                    "slow_RSI_threshold": 62,
+                    "atr_multiplier": 3,
+                    "tp_sl_ratio": 4.5,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 50,
+                    "fast_RSI_threshold": 38,
+                    "slow_RSI_threshold": 46,
+                    "atr_multiplier": 2.5,
+                    "tp_sl_ratio": 2,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "TONUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 60,
+                    "fast_RSI_threshold": 76,
+                    "slow_RSI_threshold": 62,
+                    "atr_multiplier": 2.5,
+                    "tp_sl_ratio": 3,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 20,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 36,
+                    "slow_RSI_threshold": 41,
+                    "atr_multiplier": 2,
+                    "tp_sl_ratio": 3,
+                    "max_position_duration_hours": 72
+                }
+            }
+        },
+        {
+            "symbol": "TRXUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 25,
+                    "slow_RSI_window": 60,
+                    "fast_RSI_threshold": 68,
+                    "slow_RSI_threshold": 57,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 1.5,
+                    "max_position_duration_hours": 72
+                }
+            },
+            "short": {
+                "enabled": false,
+                "params": {}
+            }
+        },
+        {
+            "symbol": "XLMUSDT",
+            "enabled": true,
+            "timeframe": "15m",
+            "strategy_name": "StandardTwoRSI",
+            "leverage": 50,
+            "long": {
+                "enabled": false,
+                "params": {}
+            },
+            "short": {
+                "enabled": true,
+                "params": {
+                    "fast_RSI_window": 10,
+                    "slow_RSI_window": 70,
+                    "fast_RSI_threshold": 38,
+                    "slow_RSI_threshold": 47,
+                    "atr_multiplier": 3.5,
+                    "tp_sl_ratio": 2,
+                    "max_position_duration_hours": 72
+                }
+            }
+        }
+    ]
+}
