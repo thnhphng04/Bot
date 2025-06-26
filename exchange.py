@@ -155,11 +155,25 @@ class Exchange:
                 raise Exception(f"Không tìm thấy precision cho symbol {symbol}")
             step_size = precisions['step_size']
             tick_size = precisions['tick_size']
+
+            def get_decimal_places(number):
+                s = str(number)
+                if '.' in s:
+                    return len(s.split('.')[1].rstrip('0'))
+                return 0
+
+            step_decimals = get_decimal_places(step_size)
+            tick_decimals = get_decimal_places(tick_size)
+
             # --- Làm tròn quantity và giá ---
             quantity = self._adjust_to_step(quantity, step_size)
+            quantity = round(quantity, step_decimals)
             entry_price = self._adjust_to_tick(entry_price, tick_size)
+            entry_price = round(entry_price, tick_decimals)
             sl_price = self._adjust_to_tick(sl_price, tick_size)
+            sl_price = round(sl_price, tick_decimals)
             tp_price = self._adjust_to_tick(tp_price, tick_size)
+            tp_price = round(tp_price, tick_decimals)
             logging.info(f"Chuẩn bị đặt lệnh {side} cho {symbol}: Qty={quantity}, Entry={entry_price}, SL={sl_price}, TP={tp_price}")
             loop = asyncio.get_event_loop()
             market_order_side = "BUY" if side == "LONG" else "SELL"

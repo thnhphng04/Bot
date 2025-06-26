@@ -8,7 +8,7 @@
     },
     "risk_settings": {
         "mode": "percentage",
-        "value": 0.5
+        "value": 0.1
     },
     "trading_pairs": [
         {

@@ -1,4 +1,5 @@
 pandas
 ta
 python-dotenv
+--no-cache-dir git+https://github.com/binance/binance-futures-connector-python.git
 binance-connector 
